@@ -137,26 +137,30 @@ After that running http://localhost:3000/ the react app will start and you can s
 
 
 Method 2:
-# backend
-open the new terminal when you are in VS code and get to the backend directory using the '''cmd 
-''' cd backend'''
-after that just try to run the command
+## Backend
+open the new terminal when you are in VS code and get to the backend directory using the cmd 
+'''cd backend'''
+
+After that just try to run the command
 '''npm start command'''
+
 After this step go to a new terminal in VS Code for frontend
 
-#frontend
+## Frontend
 once you are in the terminal guide yourself to the frontend directory using cmd
-''' cd frontend'''
+'''cd frontend'''
 try to run  the command in the terminal as
 '''npm start'''
 after that web page will open up with all the data and web page.
 
-#web page
-after doing these two steps you are on a final web page where you can perform edit delete and insert tasks as required
-webpage will automatically open on your default browser on a link
-'''http://localhost:3000'''
+
+
+## WEB page
+after doing these two steps you are on a final web page where you can perform edit delete and insert tasks as required webpage will automatically open on your default browser on a link
+http://localhost:3000
 If it doesn't open up just look for
-'''localhost:3000''' on your browser to  see the final outcome.
+http://localhost:3000
+
 
 
 
