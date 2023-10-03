@@ -125,8 +125,9 @@ http://localhost:3000/
 After doing this even if you can't see the output on the browser (say you just see the page without data), you need to install Mongodb with docker
 
 # Installation of MongoDB with docker
-'''cmd 
-'''docker pull mongo'''
+```cmd 
+docker pull mongo
+```
 as soon as you do this it should pull all the data 
 after this one try to reload your web page in order to see the outcome
 
@@ -138,19 +139,27 @@ After that running http://localhost:3000/ the react app will start and you can s
 
 Method 2:
 ## Backend
-open the new terminal when you are in VS code and get to the backend directory using the cmd 
-'''cd backend'''
+open the new terminal when you are in VS code and get to the backend directory using the
+```cmd
+cd backend
+```
 
-After that just try to run the command
-'''npm start command'''
+After that just try to run the command in
+```cmd
+npm start command
+```
 
 After this step go to a new terminal in VS Code for frontend
 
 ## Frontend
-once you are in the terminal guide yourself to the frontend directory using cmd
-'''cd frontend'''
+once you are in the terminal guide yourself to the frontend directory using
+```cmd
+cd frontend
+```
 try to run  the command in the terminal as
-'''npm start'''
+```cmd
+npm start
+```
 after that web page will open up with all the data and web page.
 
 
