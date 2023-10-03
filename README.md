@@ -18,6 +18,8 @@ Before you install a code repository on your PC, you will need to have the follo
 
 * Docker
 
+* MongoDB
+
 
 ## System Design Infomation
 
@@ -72,8 +74,8 @@ After opening the IS-27-Full-Stack-Developer-Assessment folder you will see the 
     - README.md
 
 #You can run the above code with two techniques
-1. using docker command and
-2. running frontend and backend individually
+1. using the docker command and
+2. running backend and frontend individually
 
 Method 1:
 # Run the below docker command 
@@ -105,7 +107,7 @@ http://localhost:3000/
 
 For testing the server run the below link in the browser, this will run the test route
 
-http://localhost:3000/test  (Example API)
+http://localhost:3100/test  (Example API)
 
 
 # Database
@@ -119,6 +121,15 @@ For running the react applications (Frontend) run the below link in a browser
 
 http://localhost:3000/
 
+# Additional
+After doing this even if you can't see the output on the browser (say you just see the page without data), you need to install Mongodb with docker
+
+# Installation of MongoDB with docker
+'''cmd 
+'''docker pull mongo'''
+as soon as you do this it should pull all the data 
+after this one try to reload your web page in order to see the outcome
+
 
 ## Conclusion
 
@@ -127,18 +138,25 @@ After that running http://localhost:3000/ the react app will start and you can s
 
 Method 2:
 # backend
-open the new terminal when you are in VS code and get to the backend directory using the cd backend
-after that just try to run the npm start command
-once you are done with that command open a new terminal for frontend
+open the new terminal when you are in VS code and get to the backend directory using the '''cmd 
+''' cd backend'''
+after that just try to run the command
+'''npm start command'''
+After this step go to a new terminal in VS Code for frontend
 
 #frontend
-once you are in the terminal guide yourself to the cd frontend directory
-try to run  the command in the terminal as npm start
+once you are in the terminal guide yourself to the frontend directory using cmd
+''' cd frontend'''
+try to run  the command in the terminal as
+'''npm start'''
 after that web page will open up with all the data and web page.
 
 #web page
 after doing these two steps you are on a final web page where you can perform edit delete and insert tasks as required
-webpage will open on http://localhost:3000
+webpage will automatically open on your default browser on a link
+'''http://localhost:3000'''
+If it doesn't open up just look for
+'''localhost:3000''' on your browser to  see the final outcome.
 
 
 
