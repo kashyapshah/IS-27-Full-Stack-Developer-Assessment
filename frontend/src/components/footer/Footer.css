@@ -1,0 +1,14 @@
+.footer {
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #242638;
+    color: white;
+  }
+  
+.navbar.fixed-bottom {
+  color: #242638;
+  background-color: #242638;
+}

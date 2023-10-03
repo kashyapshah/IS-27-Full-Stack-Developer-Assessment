@@ -1,0 +1,14 @@
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    background-color: purple;
+    color: white;
+  }
+  
+  .navbar.fixed-top {
+    color: #242638;
+    background-color: #242638;
+  }
