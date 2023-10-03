@@ -16,7 +16,7 @@ Before you install a code repository on your PC, you will need to have the follo
 
 * Visual Studio Code (VS Code)
 
-* Docker
+* Docker (latest version)
 
 * MongoDB
 
