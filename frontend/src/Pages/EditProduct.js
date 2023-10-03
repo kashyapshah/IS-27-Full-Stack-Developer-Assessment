@@ -10,7 +10,7 @@ export const EditProduct = (props) => {
   return (
     <div className="d-flex justify-content-center" style={{ margin: "5rem" }}>
       <div className="card" style={{ width: "40rem" }}>
-        <Fieldset legend="Edit Product">
+        <Fieldset legend="Edit User">
           {/* Form components */}
           <FormComponent isEdit={isEdit} data={data} />
         </Fieldset>

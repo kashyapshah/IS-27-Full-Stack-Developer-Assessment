@@ -54,7 +54,7 @@ const Home = () => {
     const url = 'https://jsonplaceholder.typicode.com/users'
    const getUsers =  await axios.get(url);
    if(getUsers){
-    const insertUrl = "http://127.0.0.1:3000/api/insertMany"
+    const insertUrl = "http://127.0.0.1:3100/api/insertMany"
     const bulkData = getUsers?.data
     axios
       .post(insertUrl, bulkData) 
@@ -72,9 +72,9 @@ const Home = () => {
    }
   }
 
-  //Get all product data
+  //Get all user data
   const GetProductData = () => {
-    const url = "http://localhost:3000/api/";
+    const url = "http://127.0.0.1:3100/api/";
     axios
       .get(url)
       .then((res) => {
@@ -98,7 +98,7 @@ const Home = () => {
 
   //handle Delete Function
   const handleDelete = () => {
-    const url = `http://localhost:3000/api/delete/${id}`;
+    const url = `http://127.0.0.1:3100/api/delete/${id}`;
     axios
       .delete(url)
       .then((res) => {
@@ -134,7 +134,7 @@ const Home = () => {
         <Link to="/create">
           <Button variant="primary">
             <i className="fa fa-plu"></i>
-            Add New Product
+            Add New User
           </Button>
         </Link>
       </div>
@@ -194,8 +194,8 @@ const Home = () => {
             resizableColumns
             rowsPerPageOptions={[5, 10, 25]}
             paginatorTemplate="FirstPageLink PrevPageLink PageLinks NextPageLink LastPageLink CurrentPageReport RowsPerPageDropdown"
-            currentPageReportTemplate="Showing {first} to {last} of {totalRecords} products"
-            emptyMessage="No customers found."
+            currentPageReportTemplate="Showing {first} to {last} of {totalRecords} users"
+            emptyMessage="No user found."
             globalFilter={globalFilter}
             header={header}
           >
@@ -239,7 +239,7 @@ const Home = () => {
         </div>
       </div>
 
-      {/* delete product */}
+      {/* delete user */}
       <div className="model-box-view">
         <Modal
           show={ViewDelete}
@@ -248,18 +248,18 @@ const Home = () => {
           keyboard={false}
         >
           <Modal.Header closeButton>
-            <Modal.Title>Delete Product</Modal.Title>
+            <Modal.Title>Delete User</Modal.Title>
           </Modal.Header>
           <Modal.Body>
             <div>
               <div className="form-group">
-                <h4>Are sure you want to delete this product!</h4>
+                <h4>Are sure you want to delete this User!</h4>
                 <Button
                   type="submit"
                   className="btn btn-danger mt-4"
                   onClick={handleDelete}
                 >
-                  Anyway Delete Product
+                  Anyway Delete User
                 </Button>
               </div>
             </div>

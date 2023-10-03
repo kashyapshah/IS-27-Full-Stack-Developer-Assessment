@@ -7,7 +7,7 @@ export const AddProduct = () => {
   return (
     <div className="d-flex justify-content-center" style={{ margin: "5rem" }}>
       <div className="card" style={{ width: "40rem" }}>
-        <Fieldset legend="Add Product">
+        <Fieldset legend="Add User">
           {/* Form components */}
           <FormComponent />
         </Fieldset>

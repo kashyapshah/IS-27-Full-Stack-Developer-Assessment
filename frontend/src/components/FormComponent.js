@@ -51,7 +51,7 @@ export function FormComponent(props) {
 
   //handle Submit Function
   const handleAdd = () => {
-    const url = "http://localhost:3000/api/add";
+    const url = "http://localhost:3100/api/add";
     const new_data = {
       name: name,
       username: "Bret",
@@ -81,7 +81,7 @@ export function FormComponent(props) {
         if (res.status != 201) {
           setAlert({ success: false, msg: 'User not added!' });
         } else {
-          navigate("/", { state: { success: true, msg: 'User Aadded successfully' } });
+          navigate("/", { state: { success: true, msg: 'User Added successfully' } });
         }
       })
       .catch((err) => {
@@ -91,7 +91,7 @@ export function FormComponent(props) {
 
   //handle Edit Function
   const handleEdit = () => {
-    const url = `http://localhost:3000/api/update/${data._id}`;
+    const url = `http://localhost:3100/api/update/${data._id}`;
       const new_data = {
         name: name,
         username: data.username,
@@ -208,7 +208,7 @@ export function FormComponent(props) {
         <input
           type="text"
           className="form-control"
-          placeholder="Please Enter Copany"
+          placeholder="Please Enter Company"
           value={company}
           onChange={(e) => {
             let val = e.target.value;
@@ -222,7 +222,7 @@ export function FormComponent(props) {
         type="submit"
         onClick={() => validation()}
       >
-        {isEdit ? "Edit Product" : "Add Product"}
+        {isEdit ? "Edit User" : "Add User"}
       </Button>
     </div>
   );
